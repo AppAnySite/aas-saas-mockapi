@@ -1,0 +1,122 @@
+[
+  {
+    "id": "#1Card_Kelli",
+    "avatar": "avatar-1.png",
+    "name": "Kelli",
+    "status": "Active"
+  },
+  {
+    "id": "#2Card_Laurence",
+    "avatar": "avatar-2.png",
+    "name": "Laurence",
+    "status": "Rejected"
+  },
+  {
+    "id": "#3Card_Melyssa",
+    "avatar": "avatar-3.png",
+    "name": "Melyssa",
+    "status": "Active"
+  },
+  {
+    "id": "#4Card_Montana",
+    "avatar": "avatar-4.png",
+    "name": "Montana",
+    "status": "Active"
+  },
+  {
+    "id": "#5Card_Johnathan",
+    "avatar": "avatar-5.png",
+    "name": "Johnathan",
+    "status": "Active"
+  },
+  {
+    "id": "#6Card_Joanne",
+    "avatar": "avatar-6.png",
+    "name": "Joanne",
+    "status": "Active"
+  },
+  {
+    "id": "#7Card_Lisandro",
+    "avatar": "avatar-7.png",
+    "name": "Lisandro",
+    "status": "Rejected"
+  },
+  {
+    "id": "#8Card_Geovany",
+    "avatar": "avatar-1.png",
+    "name": "Geovany",
+    "status": "Active"
+  },
+  {
+    "id": "#9Card_Lucius",
+    "avatar": "avatar-2.png",
+    "name": "Lucius",
+    "status": "Active"
+  },
+  {
+    "id": "#10Card_River",
+    "avatar": "avatar-3.png",
+    "name": "River",
+    "status": "Active"
+  },
+  {
+    "id": "#11Card_Haylee",
+    "avatar": "avatar-4.png",
+    "name": "Haylee",
+    "status": "Active"
+  },
+  {
+    "id": "#12Card_John",
+    "avatar": "avatar-5.png",
+    "name": "John",
+    "status": "Active"
+  },
+  {
+    "id": "#13Card_Jeanne",
+    "avatar": "avatar-6.png",
+    "name": "Jeanne",
+    "status": "Active"
+  },
+  {
+    "id": "#14Card_Maryam",
+    "avatar": "avatar-7.png",
+    "name": "Maryam",
+    "status": "Rejected"
+  },
+  {
+    "id": "#15Card_Alexandre",
+    "avatar": "avatar-1.png",
+    "name": "Alexandre",
+    "status": "Active"
+  },
+  {
+    "id": "#16Card_Jordi",
+    "avatar": "avatar-2.png",
+    "name": "Jordi",
+    "status": "Active"
+  },
+  {
+    "id": "#17Card_Sharon",
+    "avatar": "avatar-3.png",
+    "name": "Sharon",
+    "status": "Active"
+  },
+  {
+    "id": "#18Card_Trycia",
+    "avatar": "avatar-4.png",
+    "name": "Trycia",
+    "status": "Active"
+  },
+  {
+    "id": "#19Card_Mazie",
+    "avatar": "avatar-5.png",
+    "name": "Mazie",
+    "status": "Active"
+  },
+  {
+    "id": "#20Card_Virgie",
+    "avatar": "avatar-6.png",
+    "name": "Virgie",
+    "status": "Active"
+  }
+]
