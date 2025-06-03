@@ -1,6 +1,6 @@
 {
   "name": "aas-saas-mockapi",
-  "version": "v00.01-RC00",
+  "version": "v00.01-RC01",
   "private": false,
   "scripts": {
     "dev": "next dev -p 3002",
