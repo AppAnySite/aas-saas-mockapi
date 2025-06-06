@@ -10,7 +10,15 @@ const JWT_EXPIRES_TIME = JWT_API.timeout;
 
 export default async function handler(req, res) {
   await cors(req, res, NO_AUTHENTICATION_REQUIRED);
-  const { email, password } = req.body;
+  let email;
+  let password;
+  // Support both direct and wrapped payload
+  if (req.body?.data) {
+    ({ email, password } = req.body.data);
+  } else {
+    ({ email, password } = req.body);
+  }
+
   const user = users.find((_user) => _user.email === email);
 
   if (!user) {
