@@ -28,6 +28,9 @@ export default async function handler(req, res) {
   if (user.password !== password) {
     return res.status(400).json({ message: messages.errorMessages.invalidPassword });
   }
+  user.loginCount += 1;
+  user.lastLoginAt = new Date().toISOString();
+  user.updatedAt = new Date().toISOString();
 
   const serviceToken = jwt.sign({ userId: user.id }, JWT_SECRET || '', {
     expiresIn: JWT_EXPIRES_TIME
@@ -35,10 +38,24 @@ export default async function handler(req, res) {
   return res.status(200).json({
     serviceToken,
     user: {
-      id: user.id,
-      email: user.email,
-      name: user.name,
-      role: user.role
-    }
+    id: user.id,
+    email: user.email,
+    password: user.password,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    avatar: user.avatar,
+    role: user.role,
+    apps: user.apps,
+    dashboard: user.dashboard,
+    extraPermissions: user.extraPermissions,
+    deniedPermissions: user.deniedPermissions,
+    loginCount: user.loginCount,
+    lastLoginAt: user.lastLoginAt,
+    locale: user.locale,
+    timezone: user.timezone,
+    deletedAt: user.deletedAt,
+    createdAt: user.createdAt,
+    updatedAt: user.updatedAt
+  }
   });
 }
