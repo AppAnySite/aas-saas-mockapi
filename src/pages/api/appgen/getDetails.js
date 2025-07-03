@@ -1,6 +1,5 @@
 import cors from 'utils/cors';
 import { NO_AUTHENTICATION_REQUIRED } from 'config';
-import { messages } from 'utils';
 import apps from 'data/apps.json';
 
 export default async function handler(req, res) {

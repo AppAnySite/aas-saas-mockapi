@@ -2,6 +2,20 @@
   "name": "aas-saas-mockapi",
   "version": "v00.01-RC00",
   "private": false,
+  "description": "Mock-API microservice for providing Mock Data",
+  "license": "MIT",
+  "author": "Vetagiri-Hrushikesh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppAnySite/aas-saas-mockapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AppAnySite/aas-saas-mockapi/issues"
+  },
+  "homepage": "https://github.com/AppAnySite/aas-saas-mockapi#readme",
+  "engines": {
+    "node": ">=22.15.0"
+  },
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
