@@ -14,7 +14,8 @@ RUN npm install
 COPY . .
 
 # Build Next.js app (only works with "next build")
-RUN npm run build
+RUN npx prettier --write . \
+&& npm run build
 
 # Expose port (3002 as per your dev script)
 EXPOSE 3002

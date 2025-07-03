@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const filteredApps = apps.filter(app => app.ownerId === ownerId);
+    const filteredApps = apps.filter((app) => app.ownerId === ownerId);
 
     if (!filteredApps.length) {
       return res.status(404).json({
@@ -40,4 +40,3 @@ export default async function handler(req, res) {
     });
   }
 }
-

@@ -38,24 +38,24 @@ export default async function handler(req, res) {
   return res.status(200).json({
     serviceToken,
     user: {
-    id: user.id,
-    email: user.email,
-    password: user.password,
-    firstName: user.firstName,
-    lastName: user.lastName,
-    avatar: user.avatar,
-    role: user.role,
-    apps: user.apps,
-    dashboard: user.dashboard,
-    extraPermissions: user.extraPermissions,
-    deniedPermissions: user.deniedPermissions,
-    loginCount: user.loginCount,
-    lastLoginAt: user.lastLoginAt,
-    locale: user.locale,
-    timezone: user.timezone,
-    deletedAt: user.deletedAt,
-    createdAt: user.createdAt,
-    updatedAt: user.updatedAt
-  }
+      id: user.id,
+      email: user.email,
+      password: user.password,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      avatar: user.avatar,
+      role: user.role,
+      apps: user.apps,
+      dashboard: user.dashboard,
+      extraPermissions: user.extraPermissions,
+      deniedPermissions: user.deniedPermissions,
+      loginCount: user.loginCount,
+      lastLoginAt: user.lastLoginAt,
+      locale: user.locale,
+      timezone: user.timezone,
+      deletedAt: user.deletedAt,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt
+    }
   });
 }
