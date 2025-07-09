@@ -1,0 +1,177 @@
+services:
+  kong:
+    image: kong:3.8.0-ubuntu
+    container_name: kong
+    restart: always
+    user: "root"
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+      - "8001:8001"
+      - "8002:8002"
+      - "8444:8444"
+    volumes:
+      - ../.config/kong.yml:/usr/local/kong/declarative/kong.yml:ro
+    environment:
+      KONG_DATABASE:           "off"
+      KONG_DECLARATIVE_CONFIG: "/usr/local/kong/declarative/kong.yml"
+      KONG_PROXY_LISTEN:       "0.0.0.0:8000,0.0.0.0:8443 ssl"
+      KONG_ADMIN_LISTEN:       "0.0.0.0:8001"
+      KONG_ADMIN_GUI_LISTEN:   "0.0.0.0:8002,0.0.0.0:8444 ssl"
+      KONG_LOG_LEVEL:          "debug"
+      KONG_PLUGINS:            "bundled,key-auth,jwt,rate-limiting,ip-restriction,request-size-limiting,cors,response-transformer,prometheus"
+      KONG_PROXY_ACCESS_LOG:   "/dev/stdout"
+      KONG_PROXY_ERROR_LOG:    "/dev/stderr"
+      KONG_ADMIN_ACCESS_LOG:   "/dev/stdout"
+      KONG_ADMIN_ERROR_LOG:    "/dev/stderr"
+      KONG_ADMIN_TOKEN:        "supersecretadmintoken"
+    networks:
+      - my-network
+
+  aas-saas-adminportal:
+    image: aas-saas-adminportal:latest
+    container_name: aas-saas-adminportal
+    labels:
+      maintainer: "AASTeam"
+      com.maighamedia.service: "aas-saas-adminportal"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.30"
+          memory: "256M"
+        reservations:
+          cpus: "0.15"
+          memory: "128M"
+    ports:
+      - "${ADMINPORTAL_PORT:-3001}:80"
+    env_file:
+      - ../.config/env/.env.${NODE_ENV}
+    depends_on:
+      aas-saas-mockapi:
+        condition: service_started
+      aas-saas-femux:
+        condition: service_started
+      mongodb:
+        condition: service_started
+    networks:
+      - my-network
+
+  aas-saas-bedemux:
+    image: aas-saas-bedemux:latest
+    container_name: aas-saas-bedemux
+    labels:
+      maintainer: "AASTeam"
+      com.maighamedia.service: "aas-saas-bedemux"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.30"
+          memory: "256M"
+        reservations:
+          cpus: "0.15"
+          memory: "128M"
+    ports:
+      - "${DEMUXER_PORT:-5052}:${DEMUXER_PORT:-5052}"
+    env_file:
+      - ../.config/env/.env.${NODE_ENV}
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      loki:
+        condition: service_started
+      prometheus:
+        condition: service_started
+      alertmanager:
+        condition: service_started
+      jaeger:
+        condition: service_started
+      aas-saas-appgen:
+        condition: service_healthy
+      aas-saas-mailgen:
+        condition: service_healthy
+    networks:
+      - my-network
+
+  aas-saas-devportal:
+    image: aas-saas-devportal:latest
+    container_name: aas-saas-devportal
+    labels:
+      maintainer: "AASTeam"
+      com.maighamedia.service: "aas-saas-devportal"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.30"
+          memory: "256M"
+        reservations:
+          cpus: "0.15"
+          memory: "128M"
+    ports:
+      - "${DEVPORTAL_PORT:-3000}:80"
+    env_file:
+      - ../.config/env/.env.${NODE_ENV}
+    depends_on:
+      mongodb:
+        condition: service_started
+    networks:
+      - my-network
+
+  aas-saas-femux:
+    image: aas-saas-femux:latest
+    container_name: aas-saas-femux
+    labels:
+      maintainer: "AASTeam"
+      com.maighamedia.service: "aas-saas-femux"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.30"
+          memory: "256M"
+        reservations:
+          cpus: "0.15"
+          memory: "128M"
+    ports:
+      - "${FEMUXER_PORT:-5050}:${FEMUXER_PORT:-5050}"
+    env_file:
+      - ../.config/env/.env.${NODE_ENV}
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      loki:
+        condition: service_started
+      prometheus:
+        condition: service_started
+      alertmanager:
+        condition: service_started
+      jaeger:
+        condition: service_started
+      aas-saas-appgen:
+        condition: service_healthy
+      aas-saas-mailgen:
+        condition: service_healthy
+    networks:
+      - my-network
