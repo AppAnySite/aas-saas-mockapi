@@ -1,7 +1,7 @@
 [
   {
     "id": "app-001",
-    "name": "Akash App 1",
+    "name": "AppAnySite",
     "ownerId": "user12345",
     "ownerEmail": "mockuser1@example.com",
     "initialUrl": "https://app1.example.com",
@@ -30,7 +30,7 @@
   },
   {
     "id": "app-002",
-    "name": "Akash App 2",
+    "name": "Multimagix",
     "ownerId": "user12345",
     "ownerEmail": "mockuser2@example.com",
     "initialUrl": "https://app2.example.com",
@@ -59,8 +59,8 @@
   },
   {
     "id": "app-003",
-    "name": "Akash App 3",
-    "ownerId": "user34567",
+    "name": "Maigha",
+    "ownerId": "owner12345",
     "ownerEmail": "mockuser3@example.com",
     "initialUrl": "https://app3.example.com",
     "appSourceCodePath": "/apps/MockSuperApp3/source",
@@ -88,8 +88,8 @@
   },
   {
     "id": "app-004",
-    "name": "Akash App 4",
-    "ownerId": "user45678",
+    "name": "Trello",
+    "ownerId": "dev12345",
     "ownerEmail": "mockuser4@example.com",
     "initialUrl": "https://app4.example.com",
     "appSourceCodePath": "/apps/MockSuperApp4/source",

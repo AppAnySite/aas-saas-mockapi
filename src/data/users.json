@@ -4,7 +4,7 @@
     "email": "user@maigha.com",
     "password": "User@123",
     "firstName": "Mai",
-    "lastName": "Super",
+    "lastName": "User",
     "avatar": "https://example.com/avatar.png",
     "image": "https://example.com/image.png",
     "apps": ["app-001"],
@@ -38,49 +38,88 @@
     }
   },
   {
-    "id": "883bd91a",
-    "email": "admin@maigha.com",
-    "password": "Admin@123",
-    "firstName": "Admin",
-    "lastName": "User",
-    "avatar": "https://example.com/admin-avatar.png",
-    "image": "https://example.com/admin-image.png",
-    "apps": ["app-003"],
-    "role": "ADMIN",
-    "extraPermissions": ["APP_CREATE", "APP_UPDATE", "APP_DELETE"],
-    "deniedPermissions": [],
-    "tier": "premium",
-    "isActive": true,
-    "emailVerified": true,
-    "lastLoginAt": "2025-07-04T15:30:00Z",
-    "loginCount": 12,
-    "locale": "en-GB",
-    "timezone": "Europe/London",
-    "mfaEnabled": false,
-    "deletedAt": null,
-    "dashboard": {
-      "id": "group-dashboard",
-      "title": "dashboard",
-      "type": "group",
-      "icon": "dashboard",
-      "children": [
-        {
-          "id": "admin-panel",
-          "title": "Admin Panel",
-          "type": "item",
-          "url": "/dashboard/admin",
-          "icon": "settings",
-          "breadcrumbs": false
-        },
-        {
-          "id": "all-apps",
-          "title": "All Apps",
-          "type": "item",
-          "url": "/dashboard/apps",
-          "icon": "box",
-          "breadcrumbs": false
-        }
-      ]
-    }
+  "id": "owner12345",
+  "email": "owner@maigha.com",
+  "password": "Owner@123",
+  "firstName": "Maigha",
+  "lastName": "Owner",
+  "avatar": "https://example.com/owner-avatar.png",
+  "image": "https://example.com/owner-image.png",
+  "apps": ["app-003"],
+  "role": "OWNER",
+  "extraPermissions": ["APP_CREATE", "APP_UPDATE", "BILLING_VIEW"],
+  "deniedPermissions": [],
+  "tier": "pro",
+  "isActive": true,
+  "emailVerified": true,
+  "lastLoginAt": "2025-07-01T09:00:00Z",
+  "loginCount": 12,
+  "locale": "en-US",
+  "timezone": "Asia/Kolkata",
+  "mfaEnabled": true,
+  "deletedAt": null,
+  "dashboard": {
+    "id": "group-dashboard",
+    "title": "dashboard",
+    "type": "group",
+    "icon": "dashboard",
+    "children": [
+      {
+        "id": "my-apps",
+        "title": "My Apps",
+        "type": "item",
+        "url": "/dashboard/my-apps",
+        "icon": "mobile",
+        "breadcrumbs": false
+      },
+      {
+        "id": "billing",
+        "title": "Billing",
+        "type": "item",
+        "url": "/dashboard/billing",
+        "icon": "wallet",
+        "breadcrumbs": false
+      }
+    ]
   }
+},
+{
+  "id": "dev12345",
+  "email": "developer@maigha.com",
+  "password": "Dev@123",
+  "firstName": "Maigha",
+  "lastName": "Dev",
+  "avatar": "https://example.com/dev-avatar.png",
+  "image": "https://example.com/dev-image.png",
+  "apps": ["app-004"],
+  "role": "DEVELOPER",
+  "extraPermissions": ["APP_CREATE", "APP_UPDATE"],
+  "deniedPermissions": ["APP_DELETE"],
+  "tier": "free",
+  "isActive": true,
+  "emailVerified": true,
+  "lastLoginAt": "2025-07-01T08:00:00Z",
+  "loginCount": 7,
+  "locale": "en-US",
+  "timezone": "Asia/Kolkata",
+  "mfaEnabled": true,
+  "deletedAt": null,
+  "dashboard": {
+    "id": "group-dashboard",
+    "title": "dashboard",
+    "type": "group",
+    "icon": "dashboard",
+    "children": [
+      {
+        "id": "my-apps",
+        "title": "My Apps",
+        "type": "item",
+        "url": "/dashboard/my-apps",
+        "icon": "mobile",
+        "breadcrumbs": false
+      }
+    ]
+  }
+}
+
 ]
