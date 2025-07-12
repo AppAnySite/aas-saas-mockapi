@@ -1,0 +1,38 @@
+[
+  {
+    "buildId": "build001",
+    "buildNumber": "3",
+    "appId": "app-001",
+    "version": "1.0.0",
+    "platform": ["ios"],
+    "status": "success",
+    "createdAt": "2025-06-01T09:45:00Z"
+  },
+  {
+    "buildId": "build002",
+    "buildNumber": "1",
+    "appId": "app-002",
+    "version": "2.0.0",
+    "platform": ["ios", "android"],
+    "status": "success",
+    "createdAt": "2025-01-08T10:00:00Z"
+  },
+  {
+    "buildId": "build003",
+    "buildNumber": "6",
+    "appId": "app-003",
+    "version": "3.0.0",
+    "platform": ["android"],
+    "status": "failed",
+    "createdAt": "2024-10-16T08:30:00Z"
+  },
+  {
+    "buildId": "build567894",
+    "buildNumber": "7",
+    "appId": "app-004",
+    "version": "4.0.0",
+    "platform": ["android"],
+    "status": "success",
+    "createdAt": "2024-12-01T11:00:00Z"
+  }
+]
