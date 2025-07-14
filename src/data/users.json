@@ -120,6 +120,32 @@
       }
     ]
   }
+},
+{
+  "id": "admin123",
+  "email": "admin@maigha.com",
+  "password": "Admin@123",
+  "firstName": "Maigha",
+  "lastName": "Admin",
+  "avatar": "https://example.com/admin-avatar.png",
+  "image": "https://example.com/admin-image.png",
+  "apps": [],
+  "role": "ADMIN",
+  "extraPermissions": [
+    "APP_CREATE",
+    "APP_UPDATE",
+    "APP_DELETE",
+    "APP_PUBLISH"
+  ],
+  "deniedPermissions": [],
+  "tier": "enterprise",
+  "isActive": true,
+  "emailVerified": true,
+  "lastLoginAt": "2025-07-14T08:30:00Z",
+  "loginCount": 120,
+  "locale": "en-US",
+  "timezone": "Asia/Kolkata",
+  "mfaEnabled": true,
+  "deletedAt": null
 }
-
 ]
