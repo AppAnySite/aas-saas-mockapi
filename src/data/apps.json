@@ -25,6 +25,8 @@
     "comments": ["Initial draft"],
     "description": "Educational tools for students.",
     "schemaVersion": "v1.0",
+    "isDeleted": false,
+    "deletedAt": null,
     "createdAt": "2025-06-01T08:00:00Z",
     "updatedAt": "2025-06-02T10:30:00Z"
   },
@@ -54,6 +56,8 @@
     "comments": ["Ready for beta"],
     "description": "A social app with live chat features.",
     "schemaVersion": "v1.1",
+    "isDeleted": false,
+    "deletedAt": null,
     "createdAt": "2024-12-20T09:30:00Z",
     "updatedAt": "2025-01-09T17:00:00Z"
   },
@@ -83,6 +87,8 @@
     "comments": ["Deprecated app"],
     "description": "This app is deprecated and archived.",
     "schemaVersion": "v1.2",
+    "isDeleted": false,
+    "deletedAt": null,
     "createdAt": "2024-10-15T11:20:00Z",
     "updatedAt": "2025-03-01T14:40:00Z"
   },
@@ -112,6 +118,8 @@
     "comments": ["Initial release"],
     "description": "MockSuperApp 4 is a news and media app.",
     "schemaVersion": "v2.0",
+    "isDeleted": false,
+    "deletedAt": null,
     "createdAt": "2024-11-30T10:15:00Z",
     "updatedAt": "2024-12-05T09:45:00Z"
   }
