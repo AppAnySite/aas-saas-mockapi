@@ -1,3 +1,21 @@
+######################################################################
+# aas-saas-mockapi.compose.yml                                      #
+#                                                                    #
+# Docker Compose for MockAPI Microservice                            #
+#                                                                    #
+# Services:                                                          #
+#   - aas-saas-mockapi: Provides mock API endpoints for              #
+#     the AppAnySite SaaS platform.                                  #
+#                                                                    #
+# Includes build args, healthchecks, resource limits, and networks.  #
+#                                                                    #
+# Maintainer: Maigha Inc DevOps Team                                 #
+# Authors: 2024 Maigha Inc, AppAnySite Contributors                  #
+# License: Proprietary/Confidential                                  #
+#                                                                    #
+# For questions, contact: devops@maigha.com                          #
+######################################################################
+
 x-logging: &default-logging
   driver: "json-file"
   options:
