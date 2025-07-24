@@ -48,9 +48,9 @@ services:
           cpus: "0.15"
           memory: "128M"
     ports:
-      - "${ADMINPORTAL_PORT:-3001}:80"
+      - "${AAS_ADMINPORTAL_PORT:-3001}:80"
     env_file:
-      - ../.config/env/.env.${NODE_ENV}
+      - ../.config/env/.env.${AAS_ENV}
     depends_on:
       aas-saas-mockapi:
         condition: service_started
@@ -83,7 +83,7 @@ services:
     ports:
       - "${DEMUXER_PORT:-5052}:${DEMUXER_PORT:-5052}"
     env_file:
-      - ../.config/env/.env.${NODE_ENV}
+      - ../.config/env/.env.${AAS_ENV}
     depends_on:
       rabbitmq:
         condition: service_healthy
@@ -124,9 +124,9 @@ services:
           cpus: "0.15"
           memory: "128M"
     ports:
-      - "${DEVPORTAL_PORT:-3000}:80"
+      - "${AAS_DEVPORTAL_PORT:-3000}:80"
     env_file:
-      - ../.config/env/.env.${NODE_ENV}
+      - ../.config/env/.env.${AAS_ENV}
     depends_on:
       mongodb:
         condition: service_started
@@ -153,9 +153,9 @@ services:
           cpus: "0.15"
           memory: "128M"
     ports:
-      - "${FEMUXER_PORT:-5050}:${FEMUXER_PORT:-5050}"
+      - "${AAS_FEMUXER_PORT:-5050}:${AAS_FEMUXER_PORT:-5050}"
     env_file:
-      - ../.config/env/.env.${NODE_ENV}
+      - ../.config/env/.env.${AAS_ENV}
     depends_on:
       rabbitmq:
         condition: service_healthy

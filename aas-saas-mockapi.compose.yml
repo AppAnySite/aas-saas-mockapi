@@ -40,7 +40,7 @@ services:
       maintainer: "AASTeam"
       com.maighamedia.service: "aas-saas-mockapi"
       prometheus.scrape: "true"
-      prometheus.port: "${MOCKAPI_PORT:-3002}"
+      prometheus.port: "${AAS_MOCKAPI_PORT:-3002}"
     deploy:
       resources:
         limits:
@@ -50,11 +50,11 @@ services:
           cpus: "0.15"
           memory: "128M"
     ports:
-      - "${MOCKAPI_PORT:-3002}:${MOCKAPI_PORT:-3002}"
+      - "${AAS_MOCKAPI_PORT:-3002}:${AAS_MOCKAPI_PORT:-3002}"
     env_file:
-      - .config/env/.env.${NODE_ENV}
+      - .config/env/.env.${AAS_ENV}
     networks:
       - my-network
     healthcheck:
       <<: *default-healthcheck
-      test: ["CMD","sh","-c","curl -f http://localhost:${MOCKAPI_PORT:-3002}/health"]
+      test: ["CMD","sh","-c","curl -f http://localhost:${AAS_MOCKAPI_PORT:-3002}/health"]
