@@ -33,6 +33,22 @@
           "url": "/dashboard/my-apps",
           "icon": "mobile",
           "breadcrumbs": false
+        },
+        {
+          "id": "builder-download",
+          "title": "Build & Download",
+          "type": "item",
+          "url": "/dashboard/builder-download",
+          "icon": "download",
+          "breadcrumbs": false
+        },
+        {
+          "id": "preview",
+          "title": "Preview",
+          "type": "item",
+          "url": "/dashboard/preview",
+          "icon": "eye",
+          "breadcrumbs": false
         }
       ]
     }
@@ -79,7 +95,23 @@
         "url": "/dashboard/billing",
         "icon": "wallet",
         "breadcrumbs": false
-      }
+      },
+      {
+          "id": "builder-download",
+          "title": "Build & Download",
+          "type": "item",
+          "url": "/dashboard/builder-download",
+          "icon": "download",
+          "breadcrumbs": false
+        },
+        {
+          "id": "preview",
+          "title": "Preview",
+          "type": "item",
+          "url": "/dashboard/preview",
+          "icon": "eye",
+          "breadcrumbs": false
+        }
     ]
   }
 },
@@ -117,7 +149,23 @@
         "url": "/dashboard/my-apps",
         "icon": "mobile",
         "breadcrumbs": false
-      }
+      },
+      {
+          "id": "builder-download",
+          "title": "Build & Download",
+          "type": "item",
+          "url": "/dashboard/builder-download",
+          "icon": "download",
+          "breadcrumbs": false
+        },
+        {
+          "id": "preview",
+          "title": "Preview",
+          "type": "item",
+          "url": "/dashboard/preview",
+          "icon": "eye",
+          "breadcrumbs": false
+        }
     ]
   }
 },
