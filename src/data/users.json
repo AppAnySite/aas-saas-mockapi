@@ -31,23 +31,39 @@
           "title": "My Apps",
           "type": "item",
           "url": "/dashboard/my-apps",
-          "icon": "mobile",
+          "icon": "apps",
           "breadcrumbs": false
         },
         {
-          "id": "builder-download",
-          "title": "Build & Download",
+          "id": "billing",
+          "title": "Billing",
           "type": "item",
-          "url": "/dashboard/builder-download",
-          "icon": "download",
+          "url": "/dashboard/billing",
+          "icon": "wallet",
           "breadcrumbs": false
         },
         {
-          "id": "preview",
-          "title": "Preview",
+          "id": "my-profile",
+          "title": "My Profile",
           "type": "item",
-          "url": "/dashboard/preview",
-          "icon": "eye",
+          "url": "/dashboard/my-profile",
+          "icon": "profile",
+          "breadcrumbs": false
+        },
+        {
+          "id": "team",
+          "title": "Team",
+          "type": "item",
+          "url": "/dashboard/team",
+          "icon": "profile2User",
+          "breadcrumbs": false
+        },
+        {
+          "id": "resource",
+          "title": "Resources",
+          "type": "item",
+          "url": "/dashboard/resource",
+          "icon": "book1",
           "breadcrumbs": false
         }
       ]
@@ -85,7 +101,7 @@
         "title": "My Apps",
         "type": "item",
         "url": "/dashboard/my-apps",
-        "icon": "mobile",
+        "icon": "apps",
         "breadcrumbs": false
       },
       {
@@ -97,21 +113,29 @@
         "breadcrumbs": false
       },
       {
-          "id": "builder-download",
-          "title": "Build & Download",
-          "type": "item",
-          "url": "/dashboard/builder-download",
-          "icon": "download",
-          "breadcrumbs": false
-        },
-        {
-          "id": "preview",
-          "title": "Preview",
-          "type": "item",
-          "url": "/dashboard/preview",
-          "icon": "eye",
-          "breadcrumbs": false
-        }
+        "id": "my-profile",
+        "title": "My Profile",
+        "type": "item",
+        "url": "/dashboard/my-profile",
+        "icon": "profile",
+        "breadcrumbs": false
+      },
+      {
+        "id": "team",
+        "title": "Team",
+        "type": "item",
+        "url": "/dashboard/team",
+        "icon": "profile2User",
+        "breadcrumbs": false
+      },
+      {
+        "id": "resource",
+        "title": "Resources",
+        "type": "item",
+        "url": "/dashboard/resource",
+        "icon": "book1",
+        "breadcrumbs": false
+      }
     ]
   }
 },
@@ -147,25 +171,41 @@
         "title": "My Apps",
         "type": "item",
         "url": "/dashboard/my-apps",
-        "icon": "mobile",
+        "icon": "apps",
         "breadcrumbs": false
       },
       {
-          "id": "builder-download",
-          "title": "Build & Download",
-          "type": "item",
-          "url": "/dashboard/builder-download",
-          "icon": "download",
-          "breadcrumbs": false
-        },
-        {
-          "id": "preview",
-          "title": "Preview",
-          "type": "item",
-          "url": "/dashboard/preview",
-          "icon": "eye",
-          "breadcrumbs": false
-        }
+        "id": "billing",
+        "title": "Billing",
+        "type": "item",
+        "url": "/dashboard/billing",
+        "icon": "wallet",
+        "breadcrumbs": false
+      },
+      {
+        "id": "my-profile",
+        "title": "My Profile",
+        "type": "item",
+        "url": "/dashboard/my-profile",
+        "icon": "profile",
+        "breadcrumbs": false
+      },
+      {
+        "id": "team",
+        "title": "Team",
+        "type": "item",
+        "url": "/dashboard/team",
+        "icon": "profile2User",
+        "breadcrumbs": false
+      },
+      {
+        "id": "resource",
+        "title": "Resources",
+        "type": "item",
+        "url": "/dashboard/resource",
+        "icon": "book1",
+        "breadcrumbs": false
+      }
     ]
   }
 },
