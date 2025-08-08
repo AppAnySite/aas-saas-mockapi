@@ -135,6 +135,14 @@
         "url": "/dashboard/resource",
         "icon": "book1",
         "breadcrumbs": false
+      },
+      {
+        "id": "trash",
+        "title": "Trash",
+        "type": "item",
+        "url": "/dashboard/trash",
+        "icon": "trash",
+        "breadcrumbs": false
       }
     ]
   }
@@ -234,6 +242,62 @@
   "locale": "en-US",
   "timezone": "Asia/Kolkata",
   "mfaEnabled": true,
-  "deletedAt": null
+  "deletedAt": null,
+  "dashboard": {
+    "id": "group-dashboard",
+    "title": "dashboard",
+    "type": "group",
+    "icon": "dashboard",
+    "children": [
+      {
+        "id": "my-apps",
+        "title": "My Apps",
+        "type": "item",
+        "url": "/dashboard/my-apps",
+        "icon": "apps",
+        "breadcrumbs": false
+      },
+      {
+        "id": "billing",
+        "title": "Billing",
+        "type": "item",
+        "url": "/dashboard/billing",
+        "icon": "wallet",
+        "breadcrumbs": false
+      },
+      {
+        "id": "my-profile",
+        "title": "My Profile",
+        "type": "item",
+        "url": "/dashboard/my-profile",
+        "icon": "profile",
+        "breadcrumbs": false
+      },
+      {
+        "id": "team",
+        "title": "Team",
+        "type": "item",
+        "url": "/dashboard/team",
+        "icon": "profile2User",
+        "breadcrumbs": false
+      },
+      {
+        "id": "resource",
+        "title": "Resources",
+        "type": "item",
+        "url": "/dashboard/resource",
+        "icon": "book1",
+        "breadcrumbs": false
+      },
+      {
+        "id": "trash",
+        "title": "Trash",
+        "type": "item",
+        "url": "/dashboard/trash",
+        "icon": "trash",
+        "breadcrumbs": false
+      }
+    ]
+  }
 }
 ]

@@ -25,8 +25,21 @@ export default async function handler(req, res) {
     user: {
       id: user.id,
       email: user.email,
-      name: user.name,
-      dashboard: user.dashboard
+      firstName: user.firstName,
+      lastName: user.lastName,
+      avatar: user.avatar,
+      role: user.role,
+      apps: user.apps,
+      dashboard: user.dashboard,
+      extraPermissions: user.extraPermissions,
+      deniedPermissions: user.deniedPermissions,
+      loginCount: user.loginCount,
+      lastLoginAt: user.lastLoginAt,
+      locale: user.locale,
+      timezone: user.timezone,
+      deletedAt: user.deletedAt,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt
     }
   });
 }
