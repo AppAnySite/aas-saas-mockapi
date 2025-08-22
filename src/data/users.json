@@ -8,7 +8,7 @@
     "avatar": "https://example.com/avatar.png",
     "image": "https://example.com/image.png",
     "apps": ["app-001"],
-    "role": "DEVELOPER",
+    "role": "USER",
     "extraPermissions": ["APP_CREATE", "APP_UPDATE"],
     "deniedPermissions": ["APP_DELETE"],
     "tier": "free",
