@@ -2,8 +2,8 @@
   {
     "id": "app-001",
     "name": "AppAnySite",
-    "ownerId": "user12345",
-    "ownerEmail": "mockuser1@example.com",
+    "ownerId": "owner12345",
+    "ownerEmail": "mock@example.com",
     "initialUrl": "https://app1.example.com",
     "appSourceCodePath": "/apps/MockSuperApp1/source",
     "features": {
@@ -33,8 +33,8 @@
   {
     "id": "app-002",
     "name": "Multimagix",
-    "ownerId": "user12345",
-    "ownerEmail": "mockuser2@example.com",
+    "ownerId": "owner12345",
+    "ownerEmail": "owner@maigha.com",
     "initialUrl": "https://app2.example.com",
     "appSourceCodePath": "/apps/MockSuperApp2/source",
     "features": {
@@ -95,8 +95,8 @@
   {
     "id": "app-004",
     "name": "Trello",
-    "ownerId": "dev12345",
-    "ownerEmail": "mockuser4@example.com",
+    "ownerId": "owner12345",
+    "ownerEmail": "owner@maigha.com",
     "initialUrl": "https://app4.example.com",
     "appSourceCodePath": "/apps/MockSuperApp4/source",
     "features": {
@@ -159,8 +159,8 @@
   {
     "id": "app-006",
     "name": "TestApp",
-    "ownerId": "admin12345",
-    "ownerEmail": "admin@maigha.com",
+    "ownerId": "owner12345",
+    "ownerEmail": "owner@maigha.com",
     "initialUrl": "https://testapp.example.com",
     "appSourceCodePath": "/apps/TestApp/source",
     "features": {
