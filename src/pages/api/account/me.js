@@ -13,8 +13,8 @@ export default async function handler(req, res) {
   let isMicroservicesRequest = false;
   let accessToken;
   
-  // Check if this is a microservices request (has operation field)
-  if (req.body?.operation && req.body?.metadata) {
+  // Check if this is a microservices request
+  if (req.body?.metadata ) {
     isMicroservicesRequest = true;
     // For microservices requests, get token from Authorization header
     const { authorization } = req.headers;
@@ -26,9 +26,8 @@ export default async function handler(req, res) {
       });
     }
     accessToken = `${authorization}`.split(' ')[1];
-    console.log('👤 [MOCKAPI] Microservices user info request:', {
-      operation: req.body.operation,
-      correlationId: req.body.metadata?.correlationId
+    console.log('👤 [MOCKAPI] FeMuxer microservices user info request:', {
+      accessToken
     });
   } else {
     // Legacy format - get token from Authorization header
