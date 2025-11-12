@@ -10,11 +10,11 @@ const JWT_EXPIRES_TIME = JWT_API.timeout;
 
 export default async function handler(req, res) {
   await cors(req, res, NO_AUTHENTICATION_REQUIRED);
-  
+
   let email;
   let password;
   let isMicroservicesRequest = false;
-  
+
   // Check if this is a microservices request
   if (req.body?.metadata && req.body?.data) {
     // BeDemux format: { metadata: {...}, data: { email, password } }
@@ -75,7 +75,7 @@ export default async function handler(req, res) {
     }
     return res.status(400).json({ message: errorMessage });
   }
-  
+
   user.loginCount += 1;
   user.lastLoginAt = new Date().toISOString();
   user.updatedAt = new Date().toISOString();
@@ -83,7 +83,7 @@ export default async function handler(req, res) {
   const serviceToken = jwt.sign({ userId: user.id }, JWT_SECRET || '', {
     expiresIn: JWT_EXPIRES_TIME
   });
-  
+
   const userData = {
     id: user.id,
     email: user.email,
@@ -113,7 +113,7 @@ export default async function handler(req, res) {
     });
     return res.status(200).json({
       success: true,
-      message: "Login successful",
+      message: 'Login successful',
       data: {
         serviceToken,
         user: userData
@@ -125,7 +125,7 @@ export default async function handler(req, res) {
       }
     });
   }
-  
+
   // Legacy format for backward compatibility
   return res.status(200).json({
     serviceToken,

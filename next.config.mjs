@@ -9,18 +9,18 @@ const nextConfig = {
     return [
       {
         source: '/health',
-        destination: '/api/health',
+        destination: '/api/health'
       },
       {
         source: '/ready',
-        destination: '/api/ready',
+        destination: '/api/ready'
       },
       {
         source: '/info',
-        destination: '/api/info',
-      },
+        destination: '/api/info'
+      }
     ];
-  },
+  }
 };
 
 export default nextConfig; // Only ESM export

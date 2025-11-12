@@ -17,10 +17,10 @@
 ######################################################################
 
 x-logging: &default-logging
-  driver: "json-file"
+  driver: 'json-file'
   options:
-    max-size: "10m"
-    max-file: "3"
+    max-size: '10m'
+    max-file: '3'
 
 x-healthcheck: &default-healthcheck
   interval: 30s
@@ -37,24 +37,24 @@ services:
     restart: unless-stopped
     logging: *default-logging
     labels:
-      maintainer: "AASTeam"
-      com.maighamedia.service: "aas-saas-mockapi"
-      prometheus.scrape: "true"
-      prometheus.port: "${AAS_MOCKAPI_PORT:-3002}"
+      maintainer: 'AASTeam'
+      com.maighamedia.service: 'aas-saas-mockapi'
+      prometheus.scrape: 'true'
+      prometheus.port: '${AAS_MOCKAPI_PORT:-3002}'
     deploy:
       resources:
         limits:
-          cpus: "0.30"
-          memory: "256M"
+          cpus: '0.30'
+          memory: '256M'
         reservations:
-          cpus: "0.15"
-          memory: "128M"
+          cpus: '0.15'
+          memory: '128M'
     ports:
-      - "${AAS_MOCKAPI_PORT:-3002}:${AAS_MOCKAPI_PORT:-3002}"
+      - '${AAS_MOCKAPI_PORT:-3002}:${AAS_MOCKAPI_PORT:-3002}'
     env_file:
       - .config/env/.env.${AAS_ENV}
     networks:
       - my-network
     healthcheck:
       <<: *default-healthcheck
-      test: ["CMD","sh","-c","curl -f http://localhost:${AAS_MOCKAPI_PORT:-3002}/health"]
+      test: ['CMD', 'sh', '-c', 'curl -f http://localhost:${AAS_MOCKAPI_PORT:-3002}/health']

@@ -1,99 +1,94 @@
 [
   {
-  "id": "owner12345",
-  "email": "owner@maigha.com",
-  "password": "Owner@123",
-  "firstName": "Maigha",
-  "lastName": "Owner",
-  "avatar": "https://example.com/owner-avatar.png",
-  "image": "https://example.com/owner-image.png",
-  "apps": ["app-003"],
-  "role": "OWNER",
-  "extraPermissions": ["APP_CREATE", "APP_UPDATE","APP_DELETE"],
-  "deniedPermissions": [],
-  "tier": "pro",
-  "isActive": true,
-  "emailVerified": true,
-  "lastLoginAt": "2025-07-01T09:00:00Z",
-  "loginCount": 12,
-  "locale": "en-US",
-  "timezone": "Asia/Kolkata",
-  "mfaEnabled": true,
-  "deletedAt": null,
-  "dashboard": {
-    "id": "group-dashboard",
-    "title": "dashboard",
-    "type": "group",
-    "icon": "dashboard",
-    "children": [
-      {
-        "id": "my-apps",
-        "title": "My Apps",
-        "type": "item",
-        "url": "/dashboard/my-apps",
-        "icon": "apps",
-        "breadcrumbs": false
-      },
-      {
-        "id": "trash",
-        "title": "Trash",
-        "type": "item",
-        "url": "/dashboard/trash",
-        "icon": "trash",
-        "breadcrumbs": false
-      }
-    ]
+    "id": "owner12345",
+    "email": "owner@maigha.com",
+    "password": "Owner@123",
+    "firstName": "Maigha",
+    "lastName": "Owner",
+    "avatar": "https://example.com/owner-avatar.png",
+    "image": "https://example.com/owner-image.png",
+    "apps": ["app-003"],
+    "role": "OWNER",
+    "extraPermissions": ["APP_CREATE", "APP_UPDATE", "APP_DELETE"],
+    "deniedPermissions": [],
+    "tier": "pro",
+    "isActive": true,
+    "emailVerified": true,
+    "lastLoginAt": "2025-07-01T09:00:00Z",
+    "loginCount": 12,
+    "locale": "en-US",
+    "timezone": "Asia/Kolkata",
+    "mfaEnabled": true,
+    "deletedAt": null,
+    "dashboard": {
+      "id": "group-dashboard",
+      "title": "dashboard",
+      "type": "group",
+      "icon": "dashboard",
+      "children": [
+        {
+          "id": "my-apps",
+          "title": "My Apps",
+          "type": "item",
+          "url": "/dashboard/my-apps",
+          "icon": "apps",
+          "breadcrumbs": false
+        },
+        {
+          "id": "trash",
+          "title": "Trash",
+          "type": "item",
+          "url": "/dashboard/trash",
+          "icon": "trash",
+          "breadcrumbs": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "admin123",
+    "email": "admin@maigha.com",
+    "password": "Admin@123",
+    "firstName": "Maigha",
+    "lastName": "Admin",
+    "avatar": "https://example.com/admin-avatar.png",
+    "image": "https://example.com/admin-image.png",
+    "apps": [],
+    "role": "ADMIN",
+    "extraPermissions": ["APP_CREATE", "APP_UPDATE", "APP_DELETE", "APP_PUBLISH"],
+    "deniedPermissions": [],
+    "tier": "enterprise",
+    "isActive": true,
+    "emailVerified": true,
+    "lastLoginAt": "2025-07-14T08:30:00Z",
+    "loginCount": 120,
+    "locale": "en-US",
+    "timezone": "Asia/Kolkata",
+    "mfaEnabled": true,
+    "deletedAt": null,
+    "dashboard": {
+      "id": "group-dashboard",
+      "title": "dashboard",
+      "type": "group",
+      "icon": "dashboard",
+      "children": [
+        {
+          "id": "my-apps",
+          "title": "My Apps",
+          "type": "item",
+          "url": "/dashboard/my-apps",
+          "icon": "apps",
+          "breadcrumbs": false
+        },
+        {
+          "id": "trash",
+          "title": "Trash",
+          "type": "item",
+          "url": "/dashboard/trash",
+          "icon": "trash",
+          "breadcrumbs": false
+        }
+      ]
+    }
   }
-},
-{
-  "id": "admin123",
-  "email": "admin@maigha.com",
-  "password": "Admin@123",
-  "firstName": "Maigha",
-  "lastName": "Admin",
-  "avatar": "https://example.com/admin-avatar.png",
-  "image": "https://example.com/admin-image.png",
-  "apps": [],
-  "role": "ADMIN",
-  "extraPermissions": [
-    "APP_CREATE",
-    "APP_UPDATE",
-    "APP_DELETE",
-    "APP_PUBLISH"
-  ],
-  "deniedPermissions": [],
-  "tier": "enterprise",
-  "isActive": true,
-  "emailVerified": true,
-  "lastLoginAt": "2025-07-14T08:30:00Z",
-  "loginCount": 120,
-  "locale": "en-US",
-  "timezone": "Asia/Kolkata",
-  "mfaEnabled": true,
-  "deletedAt": null,
-  "dashboard": {
-    "id": "group-dashboard",
-    "title": "dashboard",
-    "type": "group",
-    "icon": "dashboard",
-    "children": [
-      {
-        "id": "my-apps",
-        "title": "My Apps",
-        "type": "item",
-        "url": "/dashboard/my-apps",
-        "icon": "apps",
-        "breadcrumbs": false
-      },
-      {
-        "id": "trash",
-        "title": "Trash",
-        "type": "item",
-        "url": "/dashboard/trash",
-        "icon": "trash",
-        "breadcrumbs": false
-      }
-    ]
-  }
-}
 ]

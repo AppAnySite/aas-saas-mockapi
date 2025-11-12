@@ -15,6 +15,10 @@
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "project": "./jsconfig.json",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["next/babel"]
+    },
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
       "impliedStrict": true
